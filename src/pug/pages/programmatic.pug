@@ -1,0 +1,162 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Programmatic'
+
+append css
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css')
+    link(rel='stylesheet', href='https://unpkg.com/aos@next/dist/aos.css')
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-white',
+        navbarStyle: 'navbar-light',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
+        navbarContainer: 'container',
+        navbarPosition: 'fixed-top'
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+   
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-img-cover overlay overlay-50',
+        pageHeaderBgImg: 'background-image: url("assets/img/home_image.png")',
+        pageHeaderStyle: 'page-header-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .page-header-content.py-5
+            .container
+                .row.justify-content-left
+                    .col-xl-8.col-lg-10.text-left
+                        div(data-aos='fade-up')
+                            h1.page-header-title
+                                b Programmatic Solution
+                            br
+                            p.page-header-text
+                                | Enjoy automated digital advertising solutions guaranteed to give you more returns on investment. 
+                                
+                            br
+                            br
+                        a.btn.btn-red.btn-marketing.rounded-pill(href='index.html#contact-us') Contact us
+
+    //- * * * * * * * * * * *
+    //- * * Click to Call Section * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        #click-to-call.container
+            .row.align-items-center
+                div(data-aos='fade-left')
+                    .screen
+                        img.img-fluid.shadow-lg(src='assets/img/click-to-call.png' width='500' alt='')
+                hr
+                .col-lg-6(data-aos='fade-up')
+                    h1.page-header-title.text-center
+                        b Click-To-Call
+                    p.lead
+                        | Get calls from users once they click your ads. Use this to generate leads, campaign message and call immediately.
+
+
+    //- * * * * * * * * * * *
+    //- * * Click to WhatsApp Section * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        #click-to-whatsapp.container
+            .row.align-items-center
+                .col-lg-6(data-aos='fade-up')
+                    h1.page-header-title.text-center
+                        b Click-To-WhatsApp
+                    p.lead
+                        | Get customers to chat with you with our  Click-To-WhatsApp. When people click your ads, they get to you on WhatsApp.
+                        br
+                        | It promotes faster reach and connection with your audience who are WhatsApp.
+                    p.lead
+                        | We can also build WhatsApp solutions that combine bots and technology to deliver leads and customer service using Bots and WhatsApp platform.
+                hr
+                div(data-aos='fade-right')
+                    .screen
+                        img.img-fluid.shadow-lg(src='assets/img/click-to-whatsapp.png' width='500' alt='')
+    
+    
+    //- * * * * * * * * * * *
+    //- * * Click to USSD Section * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-teal'
+    })
+
+        #click-to-ussd.container
+            .row.align-items-center
+                div(data-aos='fade-left')
+                    .screen
+                        img.img-fluid.shadow-lg(src='assets/img/click-to-ussd.png' width='500' alt='')
+                hr
+                .col-lg-6(data-aos='fade-up')
+                    h1.page-header-title.text-center
+                        b Click-To-USSD
+                    p.lead
+                        | Initiate USSD actions from mobile app and web. When user clicks the ads, they initiate a USSD session on your platform. 
+                        br 
+                        | This generates activities and user engagements.
+
+
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-white',
+        footerStyle: 'footer-light'
+    })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });

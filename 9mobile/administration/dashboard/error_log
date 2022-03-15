@@ -1,0 +1,63 @@
+[21-Oct-2020 16:26:16 UTC] PHP Warning:  include(../includes/dbconfig.php): failed to open stream: No such file or directory in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 123
+[21-Oct-2020 16:26:16 UTC] PHP Warning:  include(../includes/dbconfig.php): failed to open stream: No such file or directory in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 123
+[21-Oct-2020 16:26:16 UTC] PHP Warning:  include(): Failed opening '../includes/dbconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 123
+[21-Oct-2020 16:26:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getReference() on null in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 134
+[21-Oct-2020 16:30:41 UTC] PHP Warning:  include(../includes/dbconfig.php): failed to open stream: No such file or directory in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 123
+[21-Oct-2020 16:30:41 UTC] PHP Warning:  include(../includes/dbconfig.php): failed to open stream: No such file or directory in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 123
+[21-Oct-2020 16:30:41 UTC] PHP Warning:  include(): Failed opening '../includes/dbconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 123
+[21-Oct-2020 16:30:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getReference() on null in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 134
+[29-Oct-2020 13:04:18 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 143
+[29-Oct-2020 13:16:08 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 143
+[29-Oct-2020 13:35:34 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 143
+[29-Oct-2020 14:28:17 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 143
+[29-Oct-2020 15:27:52 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 15:28:34 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 15:29:02 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:02:25 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:02:31 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:02:42 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:04:07 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:04:34 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:06:11 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:10:05 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:10:24 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:12:02 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:12:15 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:18:36 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:19:07 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 16:20:34 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[29-Oct-2020 17:02:14 UTC] PHP Notice:  Undefined index: amount in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 148
+[30-Oct-2020 14:52:34 UTC] PHP Warning:  include(../includes/dbconfig.php): failed to open stream: No such file or directory in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 112
+[30-Oct-2020 14:52:34 UTC] PHP Warning:  include(): Failed opening '../includes/dbconfig.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 112
+[30-Oct-2020 14:52:34 UTC] PHP Notice:  Undefined variable: database in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 116
+[30-Oct-2020 14:52:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getReference() on null in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php:116
+Stack trace:
+#0 {main}
+  thrown in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 116
+[30-Oct-2020 14:52:34 UTC] PHP Warning:  include(../includes/dbconfig.php): failed to open stream: No such file or directory in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 112
+[30-Oct-2020 14:52:34 UTC] PHP Warning:  include(): Failed opening '../includes/dbconfig.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 112
+[30-Oct-2020 14:52:34 UTC] PHP Notice:  Undefined variable: database in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 116
+[30-Oct-2020 14:52:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getReference() on null in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php:116
+Stack trace:
+#0 {main}
+  thrown in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 116
+[30-Oct-2020 14:52:43 UTC] PHP Warning:  include(../includes/dbconfig.php): failed to open stream: No such file or directory in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 112
+[30-Oct-2020 14:52:43 UTC] PHP Warning:  include(): Failed opening '../includes/dbconfig.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 112
+[30-Oct-2020 14:52:43 UTC] PHP Notice:  Undefined variable: database in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 116
+[30-Oct-2020 14:52:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getReference() on null in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php:116
+Stack trace:
+#0 {main}
+  thrown in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 116
+[30-Oct-2020 14:52:56 UTC] PHP Warning:  include(../includes/dbconfig.php): failed to open stream: No such file or directory in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 112
+[30-Oct-2020 14:52:56 UTC] PHP Warning:  include(): Failed opening '../includes/dbconfig.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 112
+[30-Oct-2020 14:52:56 UTC] PHP Notice:  Undefined variable: database in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 116
+[30-Oct-2020 14:52:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getReference() on null in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php:116
+Stack trace:
+#0 {main}
+  thrown in /home2/dochasec/public_html/9mobile/administration/dashboard/dashboard.php on line 116

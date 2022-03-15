@@ -1,0 +1,186 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Sentiment Analysis'
+
+append css
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css')
+    link(rel='stylesheet', href='https://unpkg.com/aos@next/dist/aos.css')
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-white',
+        navbarStyle: 'navbar-light',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
+        navbarContainer: 'container',
+        navbarPosition: 'fixed-top'
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+   
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-img-cover overlay overlay-50',
+        pageHeaderBgImg: 'background-image: url("assets/img/performance_advertising.png")',
+        pageHeaderStyle: 'page-header-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .page-header-content.py-5
+            .container
+                .row.justify-content-left
+                    .col-xl-8.col-lg-10.text-left
+                        div(data-aos='fade-up')
+                            h1.page-header-title
+                                b SENTIMENT ANALYSIS
+                            br
+                            ul(style='list-style-image: url(assets/img/RedBall.gif); text-shadow: aliceblue;')
+                                li.page-header-text
+                                    | Find positive, negative and neutral mentions about your business
+                                br
+                                li.page-header-text
+                                    | Understand market opinions about your business
+                            br
+                            br
+                        a.btn.btn-red.btn-marketing.rounded-pill(href='index.html#contact-us') Contact us
+
+
+    //- * * * * * * * * * * *
+    //- * * Pages Tiles * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: true,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .container
+            .card.text-center.text-decoration-none.h-100
+                .card-body.bg-light-soft.py-5
+                    p.lead.text-justified.text-center
+                        | Analyze customer social media conversations about your brand/products, listen attentively to your customers and tailor products and services to meet their needs.
+                    
+                    
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        .container
+            .row.align-items-center
+                .col-lg-6(data-aos='fade-up')
+                    h1.page-header-title.text-center
+                        b Finding positive, negative and neutral mentions about your business
+                    p.lead
+                        | What we offer you:
+                    ul(style='list-style-image: url(assets/img/RedBall.gif); text-shadow: aliceblue;')
+                        li.page-header-text
+                            | Social media monitoring
+                        li.page-header-text
+                            | Brand monitoring
+                        li.page-header-text
+                            | Voice of customer (VoC)
+                        li.page-header-text
+                            | Customer service
+                        li.page-header-text
+                            | Market research
+                hr
+                div(data-aos='fade-right')
+                    .screen
+                        img.img-fluid.shadow-lg(src='assets/img/sentiment-analysis.png' width='500' alt='')
+    
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        .container
+            .row.align-items-center
+                div(data-aos='fade-left')
+                    .screen
+                        img.img-fluid.shadow-lg(src='assets/img/sentiment-analysis2.png' width='500' alt='')
+                hr
+                .col-lg-6(data-aos='fade-up')
+                    h1.page-header-title.text-center
+                        b Understand market opinions about your business
+                    ul(style='list-style-image: url(assets/img/RedBall.gif); text-shadow: aliceblue;')
+                        li.page-header-text
+                            | Gain market insight.
+                        li.page-header-text
+                            | Plan media, strategies and channels to use in delivering marketing actions.
+                        li.page-header-text
+                            | Gain independent insights into how your social media advertising is performing.
+                        li.page-header-text
+                            | Benchmark products and brand position against competing brands.
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-teal'
+    })
+
+        .container
+            .card.text-center.text-decoration-none.h-100
+                .card-body.bg-light-soft.py-5
+                    .mb-5.text-center
+                    h1
+                        b.text-red 
+                            | Benefits of Our Sentiment Analysis       
+                    ul.text-left(style='list-style-image: url(assets/img/RedBall.gif); text-shadow: aliceblue;')
+                        li.page-header-text Processing Data at Scale
+                        li.page-header-text Real-Time Analysis
+                        li.page-header-text Consistent criteria
+                        li.page-header-text Redesign of products and service lines to better fit in-home consumption.
+                        li.page-header-text Reallocate marketing mix to match new lifestyle habits and buying preferences.
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-white',
+        footerStyle: 'footer-light'
+    })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });

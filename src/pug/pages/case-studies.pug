@@ -1,0 +1,1019 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Case Studies'
+
+append css
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css')
+    link(rel='stylesheet', href='https://unpkg.com/aos@next/dist/aos.css')
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-white',
+        navbarStyle: 'navbar-light',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
+        navbarContainer: 'container',
+        navbarPosition: 'fixed-top'
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+   
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-img-cover overlay overlay-50',
+        pageHeaderBgImg: 'background-image: url("assets/img/performance_advertising.png")',
+        pageHeaderStyle: 'page-header-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-light'
+    })
+
+        .page-header-content.py-5
+            .container
+                .row.justify-content-left
+                    .col-xl-8.col-lg-10.text-left
+                        div(data-aos='fade-up')
+                            h1.page-header-title
+                                b CASE STUDIES
+                            br
+                            p.page-header-text
+                                | We always deliver on our goals and that is why we are trusted by several brands across different sectors to deliver on their business needs.
+                            br
+                            br
+                        a.btn.btn-red.btn-marketing.rounded-pill(href='index.html#contact-us') Contact us
+
+
+    //- * * * * * * * * * * *
+    //- * * Pages Tiles * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        h1#finance.text-teal.text-center
+            b FINANCE
+        br
+        br
+        .container
+            h1.text-red
+                b FCMB CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps): 
+                            | 500+
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 70 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Device Targeting: 
+                            | Mobile and Desktop
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows, Mac,  Windows Phone
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 3 Weeks
+                hr
+                div
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/fcmb-campaign.png' width='500' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 1M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 2.3K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.21%
+        hr
+        .container.py-5
+            h1.text-red
+                b STANDARD BANK CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps): 
+                            | 500+
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Social Media: 
+                            | Twitter, Facebook
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 70 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Device Targeting: 
+                            | Mobile and desktop devices
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows, Mac,  Windows Phone
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 3 Weeks
+                
+                .col-lg-3.offset-lg-2
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/standard-bank-campaign.png' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 5.8M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 27.1K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.37%
+
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        hr
+        h1#real-estate.text-teal.text-center
+            b REAL ESTATE
+        br
+        br
+        .container
+            h1.text-red
+                b ECHOSTONE CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps), SMS: 
+                            | 500+ sites and apps, 20K+ SMS tags (by state)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 25 &ndash; 70 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Device Targeting: 
+                            | Mobile and Desktop Devices
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows, Mac,  Windows Phone
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 1 Month
+                hr
+                div
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/echostone-campaign.png' width='500' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Unique Reach: 
+                                | 14.1M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 57.9K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.41%
+        
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        hr
+        h1#mobile-phones.text-teal.text-center
+            b MOBILE PHONES
+        br
+        .container.py-5
+            h1.text-red
+                b TECNO CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps), SMS: 
+                            | 500+ sites and apps  20K+ SMS tags (by state)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 15 &ndash; 70 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Device Targeting: 
+                            | Mobile Phones
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows Phone
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 6 Months
+                
+                .col-lg-3.offset-lg-2
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/tecno-mobile-campaign.png' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 22.3M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 67K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.30%
+
+    
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        hr
+        h1#sports-betting.text-teal.text-center
+            b SPORTS BETTING
+        br
+        br
+        .container
+            h1.text-red
+                b BET24 CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels: 
+                            | 50 + Sites &amp; apps, Social Media, Email Marketing
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 65 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Device Targeting: 
+                            | Mobile &amp; desktop devices
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows Phone,  Windows, Linux
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 4 weeks
+                hr
+                div
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/bet24-campaign.png' width='500' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 29.9M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Engagement: 
+                                | 65.5K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Sign-ups: 
+                                | 1.8K+
+        
+        hr
+        .container.py-5
+            h1.text-red
+                b HAMABET CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps): 
+                            | 500+
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Social Media: 
+                            | Twitter, Facebook
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 65 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Device Targeting: 
+                            | Mobile and desktop devices
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows Phone, Windows, Linux
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 1 Month
+                                        
+                .col-lg-3.offset-lg-2
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/hamabet-campaign.png' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 2.6M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 13.3K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Leads Generated: 
+                                | 245+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.50%
+        hr
+        .container
+            h1.text-red
+                b WGB CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels
+                            | 50 + Sites &amp; apps, Social Media, Email Marketing
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 65 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Device Targeting: 
+                            | Mobile &amp; desktop devices
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows Phone,  Windows, Linux
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 3 Months
+                hr
+                div
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/wgb-campaign.png' width='500' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 3.6M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Engagement: 
+                                | 227K+
+        hr
+        .container
+            h1.text-red
+                b 234BET CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps): 
+                            | 500+
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 65 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows Phone,  Windows, Linux
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 10 Days
+                hr
+                div
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/234bet-campaign.png' width='500' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 1.1M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 3.6K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.32%
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-teal'
+    })
+
+        hr
+        h1#beer-brands.text-teal.text-center
+            b BEER BRANDS
+        br
+        br
+        .container.py-5
+            h1.text-red
+                b BUDWEISER CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps): 
+                            | 500+
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 50 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Device Targeting: 
+                            | Mobile devices
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows Phone
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 4 Days
+                                        
+                .col-lg-3.offset-lg-2
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/budweiser-campaign.png' alt='Budweiser')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 3.2M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 10.4K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.33%
+        hr
+        .container.py-5
+            h1.text-red
+                b HEINEKEN CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps): 
+                            | 500+
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 50 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Device Targeting: 
+                            | Mobile and Desktop devices
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows, Mac, Linux
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 2 Weeks
+                                        
+                .col-lg-3.offset-lg-2
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/heineken-campaign.png' alt='Heineken')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 4.6M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 40.7K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.88%
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-teal'
+    })
+
+        hr
+        h1#sexual-health.text-teal.text-center
+            b SEXUAL HEALTH
+        br
+        br
+        .container
+            h1.text-red
+                b POSTPILL CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps): 
+                            | 500+
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 65 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows Phone,  Windows, Linux
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 1 Month
+                hr
+                div
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/postpill-campaign.png' width='500' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 1.2M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 6.5K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.54%
+        hr
+        .container.py-5
+            h1.text-red
+                b FIESTA CAMPAIGN
+            br
+            .row.justify-content-center
+                .col-lg-5
+                    p.text-red
+                        b OBJECTIVES/ TARGETING
+                    ul.fa-ul
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Channels(Sites &amp; apps): 
+                            | 500+
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Location: 
+                            | Nigeria (Lagos, Port-Harcourt, Abuja)
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Age: 
+                            | 18 &ndash; 65 years
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Operating System: 
+                            | Android, IOS, Windows Phone,  Windows, Linux
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Gender: 
+                            | Male and Female
+                        li.mb-3
+                            span.fa-li
+                            i.fas.fa-check.mr-2.text-green
+                            b Duration: 
+                            | 2 Months
+                hr
+                div
+                    p.text-red
+                        b CAMPAIGN RESULT
+                    br
+                    .row
+                        div(data-aos='fade-left')
+                            .screen
+                                img.img-fluid.shadow-lg(src='assets/img/campaign/fiesta-campaign.png' alt='')
+                    .row
+                        ul.fa-ul
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Reach: 
+                                | 4.6M+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b Clicks 
+                                | 27.1K+
+                            li.mb-3
+                                span.fa-li
+                                i.fas.fa-check.mr-2.text-green
+                                b CTR: 
+                                | 0.58%
+
+
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-white',
+        footerStyle: 'footer-light'
+    })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });

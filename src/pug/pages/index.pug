@@ -1,0 +1,434 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Home'
+
+append css
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css')
+    link(rel='stylesheet', href='https://unpkg.com/aos@next/dist/aos.css')
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-white',
+        navbarStyle: 'navbar-light',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
+        navbarContainer: 'container',
+        navbarPosition: 'fixed-top'
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+   
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-img-cover overlay overlay-50',
+        pageHeaderBgImg: 'background-image: url("https://source.unsplash.com/faEfWCdOKIg/1500x900")',
+        pageHeaderStyle: 'page-header-light',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .page-header-content.py-5
+            .container
+                .row.justify-content-center
+                    .col-xl-8.col-lg-10.text-center
+                        div(data-aos='fade-up')
+                            h1.page-header-title.text-white 
+                                b Full Tech solution for Customer Engagement and Business Automation
+                            p.page-header-text.text-white 
+                                b CHATBOTS | DATA | MEDIA
+
+
+    //- * * * * * * * * * * *
+    //- * * Pages Tiles * *
+    //- * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        #dochase-adx-tech.container
+            .card.text-center.text-decoration-none.h-100
+                .card-body.bg-light-soft.py-5
+                    h1.text-center
+                        b Dochase Tech
+                    p.text-justified.text-center
+                        |  Accelerate customer service, engagements and business growth with Dochase chatbots. Dochase integrates technology, Artificial intelligence, data and creativity to enable you communicate with customers, enhance customer service and automate your business processes.
+                    p
+                        | Dochase Chatbots enables businesses create virtual assistance chatbots, make sales online without websites, drive actions on their businesses. Our chatbots can be deployed on WhatsApp, websites, social media and apps. They can be used for sales, customer service, leads and marketing.
+                    br
+                    .text-center
+                        a.btn.btn-teal.btn-marketing.rounded-pill(href='dochase-chatbot.html') Learn More
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        .container
+            .row.align-items-center
+                
+                .col-lg-6(data-aos='fade-up')
+                    h1.page-header-title.text-center
+                        b WhatsApp Chatbots
+                    p.lead
+                        | Deploy chatbots to handle business processes like customer service, online sales, customer engagements and leads. Let your business be available 24 hours, efficient and international standard.
+                        | With Our chatbots, businesses can automate front office, deploy ads with links to chatbots to make users buy, engage and interact on mobile, including WhatsApp. 
+                hr
+                div(data-aos='fade-left')
+                    .screen
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src='assets/img/whatsapp-bot.png' width='500' height='350' alt='Data')
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+    
+        .container
+            .row.align-items-center
+                .col-lg-6.col-md-6.text-right
+                    script(src='https://cdn.admixer.net/scripts3/loader2.js' async='' data-sender='admixer' data-inv='//inv-nets.admixer.net/' data-r='always' data-bundle='desktop')
+                    #admixer_async_882024663(data-item='01fe6c85-3dd9-4582-af8d-346897c8bb70' data-sender='admixer')
+                    script.
+                        (window.globalAmlAds = window.globalAmlAds || []).push('admixer_async_882024663')
+                .col-lg-6(data-aos='fade-up')
+                    h1.page-header-title.text-center
+                        b Rich Media
+                    p.lead
+                        | Capture the attention of potential and existing customers by prompting them to interact with the ad and provide a more engaging experience.
+                        br
+                        | Rich Media ads are measurable and scalable unlike typical banner ads which allows you to measure only impressions and click-throughs. It takes away ads from irritation to fascination.
+                                
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+
+        .container
+            .row.align-items-center
+                
+                .col-lg-6(data-aos='fade-up')
+                    h1.page-header-title.text-center
+                        b Sentiment Analysis
+                    p.lead
+                        | Gain insights to what the users on internet are saying about your products, brands and services. Monitor your popularity marketing projects with Dochase media monitoring and sentiment analysis. Find out if you have positive, negative or neutral sentiments, measure social influence and more
+                        | We provide quality assurance and ensure that there is no breach in data regulations. 
+                hr
+                div(data-aos='fade-left')
+                    .screen
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src='assets/img/sentiment-analysis.png' width='500' height='350' alt='Data')
+
+        br
+        br
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'pb-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: ''
+    })
+       
+        #contact-us.row.justify-content-center
+            .col-lg-6
+                .mb-5.text-center
+                    h1
+                        b.text-teal OUR CONTACT
+                    h3.page-header-title
+                        b We are ever ready to meet your needs
+                    p.page-header-text Need to get in touch with the Dochase Team? We&apos;re just a click away!
+        .container
+            .row
+                .col-lg-6.col-md-6(data-aos='fade-up')
+                    a.card.text-decoration-none.h-100
+                        .card-body.py-5
+                            h2.text-center.text-teal
+                                b Contact Form
+                            .text-center
+                                | Please, fill out this form and we&apos;ll be in touch shortly
+                            br
+                            br
+                            form(name='contact-form' method='POST' action='https://formspree.io/xyypoddz')
+                                .form-group
+                                    label.text-dark(for='inputName')
+                                    b Full name:
+                                    input#inputName.form-control(type='text' name='name' placeholder='Enter full name' required='required')
+                                    input(type='hidden' name='_subject' value='Enquiry from the Dochase New Hosting')
+                                    input(type='hidden' name='_honeypot' value='')
+                                    input(type='hidden' name='_cc' value='ajah.agwu@dochase.com, info@dochase.com, contact@dochase.com, chibuike.goodnews@dochase.com, chioma.eze@dochase.com')
+                                .form-group
+                                    label.text-dark(for='inputEmail')
+                                    b Email Address:
+                                    input#inputEmail.form-control(type='email' name='_replyto' placeholder='Enter email Address' required='required')
+                                .form-group
+                                    label.text-dark(for='inputNumber')
+                                    b Phone Number:
+                                    input#inputNumber.form-control(type='text' name='_number' placeholder='Enter phone number here, including your country code' required='required')
+                                .form-group
+                                    label.text-dark(for='message')
+                                    b Message
+                                    textarea#message.form-control(name='message' rows='4' placeholder='Enter your message' required='required')
+                                .text-center
+                                    button.btn.btn-teal.btn-marketing.mt-4(type='submit') Submit Request
+                
+                .col-lg-6.col-md-6(data-aos='fade-up')
+                    .card.text-decoration-none.h-100
+                        .card-body.py-5
+                            h2.text-center.text-teal
+                                b You Can Meet Us At:
+                            br
+                            #addressCarousel.carousel.slide(data-ride='carousel')
+                                .carousel-inner
+                                    .carousel-item.active
+                                        iframe.shadow-lg.rounded-lg(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1032272110992!2d3.376103814770627!3d6.508616095291994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c58b38564b5%3A0x387373c263d062ea!2s361%20Herbert%20Macaulay%20Way%2C%20Sabo%20yaba%20100001%2C%20Lagos!5e0!3m2!1sen!2sng!4v1574428247623!5m2!1sen!2sng' width='450' height='450' frameborder='0' style='border:0;' allowfullscreen='')
+                                    .carousel-item
+                                        iframe.shadow-lg.rounded-lg(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.2254524750556!2d-74.52498868510139!3d40.536607956264795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c0be20b85ca9%3A0xd2e059964f5e7c36!2s220%20Davidson%20Ave%2C%20Somerset%2C%20NJ%2008873%2C%20USA!5e0!3m2!1sen!2sng!4v1594113738480!5m2!1sen!2sng' width='450' height='450' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+                                a.carousel-control-prev(href='#addressCarousel' role='button' data-slide='prev')
+                                    span.carousel-control-prev-icon(aria-hidden='true')
+                                    span.sr-only Previous
+                                a.carousel-control-next(href='#addressCarousel' role='button' data-slide='next')
+                                    span.carousel-control-next-icon(aria-hidden='true')
+                                    span.sr-only Next
+
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-5',
+        svgBorderAngled: true,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        section#clientele
+        .row.justify-content-center
+            .col-lg-6
+                .mb-5.text-center
+                    h1
+                        b.text-teal CLIENTELE
+                    p.lead.mb-0 Here are a few of the many brands that trust us.
+        .container
+            nav
+            #nav-tab.nav.nav-tabs.btn-group.btn-group-toggle(role='tablist')
+                a#nav-home-tab.nav-item.nav-link.btn.btn-red.active(data-toggle='tab' href='#nav-fintech' role='tab' aria-controls='nav-home' aria-selected='true') FINTECH
+                a#nav-fmcg-tab.nav-item.nav-link.btn.btn-red(data-toggle='tab' href='#nav-fmcg' role='tab' aria-controls='nav-profile' aria-selected='false') FMCG
+                a#nav-sports-tab.nav-item.nav-link.btn.btn-red(data-toggle='tab' href='#nav-sports' role='tab' aria-controls='nav-contact' aria-selected='false') SPORTS
+                a#nav-telecoms-tab.nav-item.nav-link.btn.btn-red(data-toggle='tab' href='#nav-telecoms' role='tab' aria-controls='nav-contact' aria-selected='false') TELECOMS
+                a#nav-automobile-tab.nav-item.nav-link.btn.btn-red(data-toggle='tab' href='#nav-automobile' role='tab' aria-controls='nav-contact' aria-selected='false') AUTOMOBILE
+            br
+            br
+            #nav-tabContent.tab-content
+                #nav-fintech.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-fintech-tab')
+                    .row.justify-content-center
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/pwc.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/UBA.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/Union-Bank.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img(src='assets/img/clientele/viable-x.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/branch.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/standard-chartered.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/fcmb.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/fxtm.png' alt='...')
+                
+                #nav-fmcg.tab-pane.fade(role='tabpanel' aria-labelledby='nav-fmcg-tab')
+                    .row.justify-content-center
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/heineken.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/Three-Crowns.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/budweiser.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/harpic.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/dettol-logo.png' alt='...')
+                
+                #nav-sports.tab-pane.fade(role='tabpanel' aria-labelledby='nav-sports-tab')
+                    .row.justify-content-center
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/winners-golden-bet.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/Bet9ja.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/hamabet.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/wazobet.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/bet24.png' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/feet-and-tricks.png' alt='...')
+                
+                #nav-telecoms.tab-pane.fade(role='tabpanel' aria-labelledby='nav-telecoms-tab')
+                    .row.justify-content-center
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/airtel.png' width='318' height='159' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/Tecno.png' width='318' height='159' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/Infinix.png' width='318' height='159' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/Itel.png' width='318' height='159' alt='...')
+                
+                #nav-automobile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-automobile-tab')
+                    .row.justify-content-center
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/suzuki.png' width='318' height='159' alt='...')
+                        .col-md-6.col-lg-4.col-xl-3.mb-5
+                            a.card.lift
+                                img.card-img-top(src='assets/img/clientele/mitsubishi.png' width='318' height='159' alt='...')
+
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'pt-5',
+        sectionPadding: 'pb-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-teal'
+    })
+
+        .container
+            .row.justify-content-center
+                .col-lg-6
+                    .mb-5.text-center
+                        h1
+                            b.text-teal  DOCHASE IN THE NEWS
+                        p.lead.mb-0 Here are some of the things the media say about us.
+            
+            .row
+                .col-lg-3.mb-5.mb-lg-0
+                    a.card.lift(href='https://www.legit.ng/1132025-dochase-disrupts-advertising-landscape-technology.html#1132025' target='_blank')
+                        img.card-img-top(src='assets/img/Media-Disruptive-Advertising-Africa.png' alt='...')
+                        .card-body.text-center.py-3
+                            h6.card-title.mb-0 Dochase disrupts advertising landscape with new technology
+                            .small.mb-2 by Mitchelle Okuku
+                            .small from Legit NG
+                        .card-footer.text-center.text-xs
+                            i.fas.fa-store-alt.mr-1
+                            | Opened October 25, 2017
+                
+                .col-lg-3.mb-5.mb-lg-0
+                    a.card.lift(href='https://www.vanguardngr.com/2018/10/tech-firms-location-app-to-fish-out-advert-targets-on-internet/' target='_blank')
+                        img.card-img-top(src='assets/img/tech-firm.png' alt='...')
+                        .card-body.text-center.py-3
+                            h6.card-title.mb-0 Tech firm&rsquo;s location app to fish out advert targets on internet
+                            .small.mb-2 by Juliet Umeh
+                            .small from Vanguard News
+                        .card-footer.text-center.text-xs
+                            i.fas.fa-store-alt.mr-1
+                            | Opened October 10, 2018
+                
+                .col-lg-3
+                    a.card.lift(href='https://www.thisdaylive.com/index.php/2017/12/29/the-guys-attempting-to-disrupt-advertising-in-africa/' target='_blank')
+                        img.card-img-top(src='assets/img/Media-Digital-Ads.png' alt='...')
+                        .card-body.text-center.py-3
+                            h6.card-title.mb-0 The Guys Attempting to Disrupt Advertising in Africa
+                            .small.mb-2 by Solomon Elusoji
+                            .small from This Day, NG
+                        .card-footer.text-center.text-xs
+                            i.fas.fa-store-alt.mr-1
+                            | Opened December 29, 2017
+                
+                .col-lg-3
+                    a.card.lift(href='https://www.adexchanger.com/ad-exchange-news/programmatic-spending-comes-africa/' target='_blank')
+                        img.card-img-top(src='assets/img/Media-Programmatic-Africa.png' alt='...')
+                        .card-body.text-center.py-3
+                            h6.card-title.mb-0 Programmatic Spending Comes To Africa
+                            .small.mb-2 by Sarah Sluis
+                            .small from AdExchanger, US
+                        .card-footer.text-center.text-xs
+                            i.fas.fa-store-alt.mr-1
+                            | Opened November 30, 2016
+            br
+            br
+            .text-center
+                a.btn.btn-teal.btn-marketing.rounded-pill(href='https://blog.dochase.com/' target='_blank') Read More
+       
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-white',
+        footerStyle: 'footer-light'
+    })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });

@@ -1,0 +1,110 @@
+mixin footer(options)
+
+    footer.footer.pt-10.pb-5.mt-auto(class=options.footerBg, class=options.footerStyle)
+
+        if block
+            block
+        else
+
+            .container-fluid
+                .row
+                    .col-lg-3
+                        .footer-brand Dochase
+                        .mb-3
+                            p Emerging market leader in business automation, chatbots, sentiment analysis and rich media
+                        .icon-list-social.mb-5
+                            a.icon-list-social-link(href='https://instagram.com/dochaseadx?igshid=vs519g8laie2' target='_blank')
+                                i.fab.fa-instagram
+                            a.icon-list-social-link(href='https://web.facebook.com/Dochase-238436459655360/' target='_blank')
+                                i.fab.fa-facebook
+                            a.icon-list-social-link(href='https://www.linkedin.com/company/dochase/' target='_blank')
+                                i.fab.fa-linkedin
+                            a.icon-list-social-link(href='https://twitter.com/dochase1' target='_blank')
+                                i.fab.fa-twitter
+                    
+                    .col-lg-9
+                        .row
+                            .col-lg-3.col-md-6.mb-5.mb-lg-0
+                                .text-uppercase-expanded.text-xs.mb-4 Solutions
+                                ul.list-unstyled.mb-0
+                                    li.mb-2
+                                        a(href='programmatic.html#click-to-whatsapp') Click to WhatsApp
+                                    li.mb-2
+                                        a(href='programmatic.html#click-to-call') Click to Call
+                                    li.mb-2
+                                        a(href='programmatic.html#click-to-ussd') USSD
+                                br
+                                br
+                                br
+                                .text-uppercase-expanded.text-xs.mb-4 Products
+                                ul.list-unstyled.mb-0
+                                    li.mb-2
+                                        a(href='dochase-chatbot.html') Chatbot
+                                    li.mb-2
+                                        a(href='rich-media.html') Rich Media
+                                    li.mb-2
+                                        a(href='sentiment-analysis.html') Sentiment Analysis
+                                    
+                                    
+                            .col-lg-4.col-md-6.mb-5.mb-lg-0
+                                .text-uppercase-expanded.text-xs.mb-4 Technical Info
+                                ul.list-unstyled.mb-0
+                                    li.mb-2
+                                        a(href='privacy.html') Privacy Policy
+                                    li.mb-2
+                                        a(href='tos.html') Terms and Conditions
+                                    li.mb-2
+                                        a(href='adquality.html') Ad Quality
+                                br    
+                                br
+                                br
+                                .text-uppercase-expanded.text-xs.mb-4 Resources
+                                ul.list-unstyled.mb-0
+                                    li.mb-2
+                                        a(href='case-studies.html') Case Studies
+                                    li.mb-2
+                                        a(href='https://blog.dochase.com/' target='_blank') Blog
+                                    li.mb-2
+                                        a(href='about-us.html') About Us
+                                    li.mb-2
+                                        a(href='index.html#clientele') Our Clientele
+                                    
+                            .col-lg-5.col-md-6
+                                .text-uppercase-expanded.text-xs.mb-4 Contact
+                                b Nigeria
+                                br
+                                ul.list-unstyled.mb-0
+                                    li
+                                        strong Address :
+                                        span 361, Herbert Macaulay Way,Yaba Lagos-Nigeria.
+                                    li
+                                        strong Phone :
+                                        span +2347054000728, +2348034410381
+                                    li
+                                        strong E-mail :
+                                        span
+                                        a(href='mailto:info@dochase.com') info@dochase.com
+                                br
+                                br
+                                b United States
+                                br
+                                ul.list-unstyled.mb-0
+                                    li
+                                        strong Address :
+                                        span  220 Davidson Avenue, Somerset NJ 08873
+                                    li
+                                        strong Phone :
+                                        span +1 732 788 3571
+                hr.my-5
+                .row.align-items-center
+                    .col-md-3.small Copyright &copy; dochase.com 2020
+                    .col-md-2.small
+                        img(src='assets/img/awards/IAB_Seal.png' width='58' height='58' alt='')
+                    .col-md-2.small
+                        img(src='assets/img/awards/comodo.png' width='58' height='58' alt='')
+                    .col-md-5.text-md-right.small
+                        a(href='privacy-policy-2.html') Privacy Policy
+                        | &middot;  
+                        a(href='adquality.html') Ad Quality
+                        | &middot;  
+                        a(href='tos.html') Terms &amp; Conditions
