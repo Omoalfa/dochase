@@ -1,6 +1,0 @@
-{
-  "require": {
-    "kreait/firebase-php": "5.0",
-    "africastalking/africastalking": "^3.0"
-  }
-}
